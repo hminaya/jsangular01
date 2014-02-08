@@ -208,3 +208,105 @@ body {
 	font-size: 12px;
 	margin: 0;
 }
+
+
+
+
+/*                                         /\ \                                                 /\_ \     /\ \__   
+  ____     __      __      _ __    ___   \ \ \___              _ __     __     ____   __  __  \//\ \    \ \ ,_\  
+ /',__\  /'__`\  /'__`\   /\`'__\ /'___\  \ \  _ `\   _______ /\`'__\ /'__`\  /',__\ /\ \/\ \   \ \ \    \ \ \/  
+/\__, `\/\  __/ /\ \L\.\_ \ \ \/ /\ \__/   \ \ \ \ \ /\______\\ \ \/ /\  __/ /\__, `\\ \ \_\ \   \_\ \_   \ \ \_ 
+\/\____/\ \____\\ \__/.\_\ \ \_\ \ \____\   \ \_\ \_\\/______/ \ \_\ \ \____\\/\____/ \ \____/   /\____\   \ \__\
+ \/___/  \/____/ \/__/\/_/  \/_/  \/____/    \/_/\/_/           \/_/  \/____/ \/___/   \/___/    \/____/    \/__/
+                                                                                                                 
+                                                                                                                 */
+
+#vehicles-search-result article {
+	border-bottom: 1px solid #111;
+	box-shadow: 0px 1px #333;
+}
+
+#vehicles-search-result article a {
+	display: block;
+	padding: 10px 0;
+	min-height: 80px;
+	color: #EEE;
+	background: none;
+	transition: 0.5s;
+}
+
+#vehicles-search-result article a:hover {
+	background: #222;
+	transition: 0.5s;
+}
+
+#vehicles-search-result article img {
+	width: 80px;
+}
+
+
+/*  __              __                        ___              
+ /\ \            /\ \__              __    /\_ \             
+ \_\ \      __   \ \ ,_\     __     /\_\   \//\ \      ____  
+ /'_` \   /'__`\  \ \ \/   /'__`\   \/\ \    \ \ \    /',__\ 
+/\ \L\ \ /\  __/   \ \ \_ /\ \L\.\_  \ \ \    \_\ \_ /\__, `\
+\ \___,_\\ \____\   \ \__\\ \__/.\_\  \ \_\   /\____\\/\____/
+ \/__,_ / \/____/    \/__/ \/__/\/_/   \/_/   \/____/ \/___/ 
+                                                             
+                                                             */
+
+#content.details article header h1,
+#content.details article header h3 {
+	margin: 0;
+}
+
+#content.details article header {
+	margin-bottom: 20px;
+}
+
+#content.details article header #main-picture {
+	margin: 1em 0;
+	width: 100%;
+}
+
+#content.details article header .gallery {
+	list-style: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#content.details article header .gallery li {
+	float: left;
+	margin-right: 5%;
+	margin-bottom: 1em;
+	width: 21%;
+}
+
+#content.details article header .gallery li:nth-child(4n+0) {
+	margin-right: 0;
+}
+
+#content.details article header .gallery li img {
+	width: 100%;
+}
+
+
+/* ____                 __                             __      
+/\  _`\              /\ \                     __    /\ \__   
+\ \,\L\_\    __  __  \ \ \____    ___ ___    /\_\   \ \ ,_\  
+ \/_\__ \   /\ \/\ \  \ \ '__`\ /' __` __`\  \/\ \   \ \ \/  
+   /\ \L\ \ \ \ \_\ \  \ \ \L\ \/\ \/\ \/\ \  \ \ \   \ \ \_ 
+   \ `\____\ \ \____/   \ \_,__/\ \_\ \_\ \_\  \ \_\   \ \__\
+    \/_____/  \/___/     \/___/  \/_/\/_/\/_/   \/_/    \/__/
+                                                             
+                                                             */
+#content.submit form .row,
+#content.submit form .input-group {
+	margin-bottom: 1em;
+}
+
+#content.submit form .input-group .input-group-addon {
+	min-width: 150px;
+}

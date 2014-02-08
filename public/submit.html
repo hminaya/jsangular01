@@ -1,0 +1,197 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>MicroCarros</title>
+		<meta charset="utf-8" />
+
+		<link rel="stylesheet" media="screen" href="components/bootstrap/dist/css/bootstrap.css" />
+		<link rel="stylesheet" media="screen" href="css/style.css" />
+	</head>
+
+	<body>
+		<div id="#wrapper" class="container">
+			<header id="main-header" class="col-md-12">
+				<h1>MicroCarros.com</h1>
+			</header>
+
+			<section id="content" class="submit col-md-8">
+				<h2>Agrega un nuevo vehìculo:</h2>
+
+				<form action="" class="cold-md-8">
+					<div class="input input-group">
+						<strong class="input-group-addon">Marca:</strong>
+
+						<select name="make" class="form-control">
+							<option>Marca</option>
+							<option>Marca</option>
+							<option>Marca</option>
+							<option>Marca</option>
+							<option>Marca</option>
+							<option>Marca</option>
+						</select>
+					</div>
+
+					<div class="input input-group">
+						<strong class="input-group-addon">Modelo:</strong>
+
+						<select name="model" class="form-control">
+							<option>Modelo</option>
+							<option>Modelo</option>
+							<option>Modelo</option>
+							<option>Modelo</option>
+							<option>Modelo</option>
+						</select>
+					</div>
+
+					<div class="input input-group">
+						<strong class="input-group-addon">Año:</strong>
+
+						<input type="text" name="year" class="form-control" />
+					</div>
+
+					<div class="input input-group">
+						<strong class="input-group-addon">Color:</strong>
+
+						<select name="color" class="form-control">
+							<option>Color</option>
+							<option>Color</option>
+							<option>Color</option>
+							<option>Color</option>
+							<option>Color</option>
+						</select>
+					</div>
+
+					<div class="input input-group">
+						<strong class="input-group-addon">Precio:</strong>
+
+						<input type="text" name="price" class="form-control" />
+					</div>
+
+					<div class="input input-group">
+						<strong class="input-group-addon">Transmisiòn:</strong>
+
+						<label>
+							<input type="radio" name="transmision" value="mechanic" checked />
+							<span>Automàtica</span>
+						</label>
+
+						<label>
+							<input type="radio" name="transmision" value="mechanic" />
+							<span>Mecànica</span>
+						</label>
+					</div>
+
+					<div class="input input-group">
+						<strong class="input-group-addon">Descripciòn:</strong>
+
+						<textarea name="description" class="form-control" rows="4"></textarea>
+					</div>
+
+					<div id="components-manager">
+						<h3>Componentes:</h3>
+
+						<ul>
+							<li>
+								<label>
+									<input type="checkbox" name="components[]" value="" />
+									<span>Componente</span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="components[]" value="" />
+									<span>Componente</span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="components[]" value="" />
+									<span>Componente</span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="components[]" value="" />
+									<span>Componente</span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="components[]" value="" />
+									<span>Componente</span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="components[]" value="" />
+									<span>Componente</span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="components[]" value="" />
+									<span>Componente</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+
+					<div id="images-manger">
+						<h3>Imagenes</h3>
+
+						<div id="added-images">
+							<article class="row">
+								<div class="image col-md-4">
+									<img src="http://data.supercarros.com/used_cars/362898_main_bigger.jpg" />
+								</div>
+
+								<div class="fields col-md-8">
+									<div class="input input-group">
+										<strong class="input-group-addon">Path:</strong>
+
+										<input type="text" name="path" class="form-control" placeholder="path" />
+									</div>
+
+									<div class="input input-group">
+										<strong class="input-group-addon">Titulo:</strong>
+
+										<input type="text" name="title" class="form-control" placeholder="title" />
+									</div>
+
+									<div class="input input-group">
+										<strong class="input-group-addon">Descripcion:</strong>
+
+										<textarea name="description" class="form-control" rows="4"></textarea>
+									</div>
+								</div>
+							</article>
+						</div>
+						
+						<div class="control row">
+							<button type="button" class="btn btn-info pull-right">
+								<i class="glyphicon glyphicon-plus"></i>
+								Agregar Imagen
+							</button>
+						</div>
+					</div>
+
+					<div class="control row">
+						<button type="submit" class="btn btn-success pull-right">
+							<i class="glyphicon glyphicon-floppy-disk"></i>
+
+							Guardar
+						</button>
+					</div>
+				</form>
+			</section>
+
+			<footer id="main-footer" class="col-md-12">
+				<p>&copy; 1999-2009 Derechos reservados, MicroCarros, S.A. (809) 555-4444</p>
+			</footer>
+		</div>
+
+		<script src="components/jquery/jquery.js"></script>
+		<script src="components/bootstrap/dist/js/bootstrap.js"></script>
+	</body>
+</html>
