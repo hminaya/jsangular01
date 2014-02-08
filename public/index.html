@@ -19,7 +19,7 @@
 
 			</header>
 
-			<section id="content" class="index col-md-8">
+			<section ng-controller="index" id="content" class="index col-md-8">
 				<section class="featured col-md-8">
 					<div class="slider">
 						<article>
@@ -115,11 +115,11 @@
 
 					<div id="latest-vehicles" class="col-md-10">
 						<article ng-repeat="carrito in carros" class="col-md-3">
-							<a href="details.html">
+							<a ng-click="eliminar(carrito)" >
 								<img ng-src="{{carrito.gallery[0].path}}" alt="car" />
 								<h4>{{carrito.model.name}}</h4>
 								<h5>{{carrito.price}}</h5>
-								
+
 							</a>
 						</article>
 
@@ -225,7 +225,7 @@
 							<li>
 								<label>
 									<input type="checkbox" name="components[]" value="Diesel" />
-									<span>Disel</span>
+									<span>Diesel</span>
 								</label>
 							</li>
 						</ul>
@@ -234,7 +234,7 @@
 			</aside>
 
 			<footer id="main-footer" class="col-md-12">
-				<p>&copy; 1999-2009 Derechos reservados, Colmado de la Esquina, S.A. (809) 555-4444</p>
+				<p>&copy; 1999-2014 Derechos reservados, Colmado de la Esquina, S.A. (809) 555-4444</p>
 			</footer>
 		</div>
 
@@ -245,6 +245,7 @@
 		<script src="components/bootstrap/dist/js/bootstrap.js"></script>
 
 		<script src="js/app.js"></script>
+		<script src="js/controllers/index.js"></script>
 		<script src="js/modelo.js"></script>
 	</body>
 </html>
