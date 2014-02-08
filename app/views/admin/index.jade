@@ -1,0 +1,17 @@
+html
+	head
+		title Admin
+
+		link(rel="stylesheet", href="/components/bootstrap/dist/css/bootstrap.css")
+		script(src="/components/jquery/jquery.js")
+		script(src="/components/bootstrap/dist/js/bootstrap.js")
+
+	body
+		#wrapper.container
+			h1 Admin
+
+			//-
+				include ./modules/make
+				include ./modules/model
+
+			include ./modules/color

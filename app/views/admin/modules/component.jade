@@ -1,0 +1,32 @@
+extends ../layout
+
+block content
+	#color-admin.col-md-6
+		h1 Components
+
+		form.new.row( action= "/admin/component/create", method="post" )
+			.col-md-8
+				input.form-control(name="name", placeholder="name")
+
+			.col-md-2
+				button.btn.btn-success(type="submit")
+					i.glyphicon.glyphicon-plus
+					|  Create
+
+		
+		each item in model.items
+			form.row( action= "/admin/component/update/" + item._id, method="post" )
+				.col-md-8
+					input.form-control(name="name", value=item.name, placeholder="name")
+
+				.col-md-2
+					button.btn.btn-info(type="submit", value="update") 
+						i.glyphicon.glyphicon-floppy-disk
+						|  update
+
+				.col-md-2
+					a.btn.btn-warning(href= "/admin/component/delete/" + item._id ) 
+						i.glyphicon.glyphicon-remove
+						|  delete
+
+

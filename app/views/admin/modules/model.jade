@@ -1,0 +1,44 @@
+extends ../layout
+
+block content
+	#model-admin.col-md-6
+		h1 Models
+
+		form.new.row(action= "/admin/model/create", method="post")
+			.col-md-4
+				select.form-control(name="make")
+					option ( Make )
+					each make in model.make
+						option(value=make._id)= make.name
+
+			.col-md-4
+				input.form-control(name="name", placeholder="name")
+
+			.col-md-2
+				button.btn.btn-success(type="submit", value="update") 
+					i.glyphicon.glyphicon-plus
+					|  create
+
+
+		each item in model.items
+			form.row(action= "/admin/model/update/" + item._id, method="post" )
+				.col-md-4
+					select.form-control(name="make")
+						option ( Make )
+						each make in model.make
+							option(value=make._id, selected= ( item.make + '') == ( make._id + ''))= make.name
+
+				.col-md-4
+					input.form-control(name="name", placeholder="name", value= item.name)
+
+				.col-md-2
+					button.btn.btn-info(type="submit", value="update") 
+						i.glyphicon.glyphicon-floppy-disk
+						|  update
+
+				.col-md-2
+					a.btn.btn-warning(href= "/admin/model/delete/" + item._id ) 
+						i.glyphicon.glyphicon-remove
+						|  delete
+
+						

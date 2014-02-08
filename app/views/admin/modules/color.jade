@@ -1,0 +1,38 @@
+extends ../layout
+
+block content
+	#color-admin.col-md-6
+		h1 Color
+
+		form.new.row( action= "/admin/color/create", method="post" )
+			.col-md-4
+				input.form-control(name="name", placeholder="name")
+
+			.col-md-4
+				input.form-control(name="hex", placeholder="hex")
+
+			.col-md-2
+				button.btn.btn-success(type="submit")
+					i.glyphicon.glyphicon-plus
+					|  Create
+
+		
+		each item in model.items
+			form.row( action= "/admin/color/update/" + item._id, method="post" )
+				.col-md-4
+					input.form-control(name="name", value=item.name, placeholder="name")
+
+				.col-md-4
+					input.form-control(name="hex", value=item.hex, placeholder="hex")
+
+				.col-md-2
+					button.btn.btn-info(type="submit", value="update") 
+						i.glyphicon.glyphicon-floppy-disk
+						|  update
+
+				.col-md-2
+					a.btn.btn-warning(href= "/admin/color/delete/" + item._id ) 
+						i.glyphicon.glyphicon-remove
+						|  delete
+
+

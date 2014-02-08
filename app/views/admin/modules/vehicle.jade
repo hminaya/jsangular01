@@ -1,0 +1,105 @@
+extends ../layout
+
+block scripts
+	script(src="/admin/js/vehicle.js")
+
+block content
+	#model-admin.col-md-12
+		h1 Vehicles
+
+
+
+		form.new.row(action= "/admin/vehicle/create", method="post")
+			.col-md-2
+				select.form-control(name="model")
+					option ( Model )
+					each mod in model.models
+						option(value=mod._id)= mod.get( 'make.name' ) + ' ' + mod.name 
+
+			.col-md-2
+				input.form-control(name="year", placeholder="year")
+
+			.col-md-2
+				select.form-control(name="color")
+					option ( Color )
+					each color in model.colors
+						option(value=color._id)= color.name
+
+			.col-md-2
+				input.form-control(name="price", placeholder="price")
+
+			.col-md-1
+				button.btn.btn-success(type="submit", value="update") 
+					i.glyphicon.glyphicon-plus
+					|  create
+
+			.compontent-manager.col-md-12.row
+				ul.component-display(id="vehicle-components-0")
+
+				.col-md-4
+					select.toAdd.form-control
+						option(value="") ( Component )
+						each component in model.components
+							option(value= component._id )= component.name
+
+				.col-md-2
+					button.add.btn.btn-default.btn-sm
+						i.glyphicon.glyphicon-plus
+						|  Add component
+
+			hr
+
+
+		each item in model.items
+			form.row(action= "/admin/model/update/" + item._id, method="post" )
+				.col-md-2
+					select.form-control(name="model")
+						option ( Make )
+						each mod in model.models
+							option(value=mod._id, selected= item.model.equals( mod ) )= mod.get( 'make.name' ) + ' ' + mod.name 
+
+				.col-md-2
+					input.form-control(name="year", placeholder="year", value=item.year)
+
+				.col-md-2
+					select.form-control(name="color")
+						option ( Color )
+						each color in model.colors
+							option(value=color._id, selected= item.color.equals( color ) )= color.name
+						
+				.col-md-2
+					input.form-control(name="price", placeholder="price", value=item.price)
+
+				.col-md-1
+					button.btn.btn-info(type="submit", value="update") 
+						i.glyphicon.glyphicon-floppy-disk
+						|  update
+
+				.col-md-1
+					a.btn.btn-warning(href= "/admin/model/delete/" + item._id ) 
+						i.glyphicon.glyphicon-remove
+						|  delete
+
+				.compontent-manager.col-md-12.row
+					ul.component-display(id="vehicle-components-" + item._id)
+						each comp in item.components
+							li
+								input(type="hidden", name="components[]", value=comp._id)
+								span= comp.name
+								| 
+								button.btn.btn-danger.btn-xs
+									i.glyphicon.glyphicon-remove
+
+
+					.col-md-4
+						select.toAdd.form-control
+							option(value="") ( Component )
+							each component in model.components
+								option(value= component._id )= component.name
+
+					.col-md-2
+						button.add.btn.btn-default.btn-sm
+							i.glyphicon.glyphicon-plus
+							|  Add component
+
+				hr			

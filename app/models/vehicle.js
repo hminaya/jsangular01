@@ -1,13 +1,13 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var VehicleSchema = new Schema({
+var TheSchema = new Schema({
 	model			: { type:  Schema.Types.ObjectId, ref: 'Model', required: true },
 	year			: { type: Number, required: true },
 	price			: { type: Number, required: true },
 	gallery			: [
 		{
-			image	: { type:  Schema.Types.ObjectId, ref: 'Images', required: true },
+			image	: { type:  Schema.Types.ObjectId, ref: 'Image', required: true },
 			order	: { type: Number, default: 0 }
 		}
 	],
@@ -18,4 +18,30 @@ var VehicleSchema = new Schema({
 	]
 });
 
-mongoose.model('Vehicle', VehicleSchema);
+//###### STATICS: ######//
+var Statics			= require( './core/statics' );
+
+TheSchema.statics	= new Statics();
+
+TheSchema.statics.$publicFields	= [ 
+	'model',
+	'year',
+	'price',
+	'gallery',
+	'color',
+	'transmission',
+	'components'
+];
+
+TheSchema.statics.$find = function $find(filters, callback) {
+	return this.find( filters, callback )
+		.populate( 'model' )
+		.populate( 'color' )
+		.populate( 'gallery.image' )
+		.populate( 'components' )
+	;
+}
+
+//###### SET UP: ######//
+
+mongoose.model('Vehicle', TheSchema);

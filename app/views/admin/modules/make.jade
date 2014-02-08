@@ -1,0 +1,43 @@
+extends ../layout
+
+block content
+	#make-admin.col-md-8
+		h1 Make
+
+		form.new.row( action= "/admin/make/create", method="post" )
+			.col-md-4
+				input.form-control(name="name", placeholder="name")
+
+			.col-md-4
+				select.form-control(name="logo")
+					option(value="") ( logo )
+					each image in model.images
+						option(value=image._id)= image.path
+
+			.col-md-2
+				button.btn.btn-success(type="submit")
+					i.glyphicon.glyphicon-plus
+					|  Create
+
+		
+		each item in model.items
+			form.row( action= "/admin/make/update/" + item._id, method="post" )
+				.col-md-4
+					input.form-control(name="name", placeholder="name", value=item.name)
+
+				.col-md-4
+					select.form-control(name="logo")
+						option(value="") ( logo )
+						each image in model.images
+							option(value=image._id, selected=(item.logo + '') == (image._id + ''))= image.path
+
+				.col-md-2
+					button.btn.btn-info(type="submit", value="update") 
+						i.glyphicon.glyphicon-floppy-disk
+						|  update
+
+				.col-md-2
+					a.btn.btn-warning(href= "/admin/make/delete/" + item._id ) 
+						i.glyphicon.glyphicon-remove
+						|  delete
+
