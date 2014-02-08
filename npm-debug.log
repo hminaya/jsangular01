@@ -1,0 +1,281 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'ecstatic', '-g' ]
+2 info using npm@1.3.24
+3 info using node@v0.10.25
+4 verbose cache add [ 'ecstatic', null ]
+5 verbose cache add name=undefined spec="ecstatic" args=["ecstatic",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'ecstatic',
+6 verbose parsed url   path: 'ecstatic',
+6 verbose parsed url   href: 'ecstatic' }
+7 silly lockFile 39198ca9-ecstatic ecstatic
+8 verbose lock ecstatic /Users/hminaya/.npm/39198ca9-ecstatic.lock
+9 silly lockFile 39198ca9-ecstatic ecstatic
+10 silly lockFile 39198ca9-ecstatic ecstatic
+11 verbose addNamed [ 'ecstatic', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile da21c704-ecstatic ecstatic@
+14 verbose lock ecstatic@ /Users/hminaya/.npm/da21c704-ecstatic.lock
+15 silly addNameRange { name: 'ecstatic', range: '*', hasData: false }
+16 verbose url raw ecstatic
+17 verbose url resolving [ 'https://registry.npmjs.org/', './ecstatic' ]
+18 verbose url resolved https://registry.npmjs.org/ecstatic
+19 info trying registry request attempt 1 at 18:04:25
+20 http GET https://registry.npmjs.org/ecstatic
+21 http 200 https://registry.npmjs.org/ecstatic
+22 silly registry.get cb [ 200,
+22 silly registry.get   { date: 'Sat, 08 Feb 2014 22:04:25 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+22 silly registry.get     etag: '"AUBN9DV8HNOGQ3BUAB4V05SOF"',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     'cache-control': 'max-age=1',
+22 silly registry.get     'content-length': '120794',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     age: '57504',
+22 silly registry.get     'x-served-by': 'cache-v44-ASH, cache-jfk1030-JFK',
+22 silly registry.get     'x-cache': 'MISS, MISS',
+22 silly registry.get     'x-cache-hits': '0, 0',
+22 silly registry.get     'x-timer': 'S1391873944.636523962,VS0,VS4,VE17,VE23121176',
+22 silly registry.get     vary: 'Accept',
+22 silly registry.get     'keep-alive': 'timeout=10, max=50',
+22 silly registry.get     connection: 'Keep-Alive' } ]
+23 silly addNameRange number 2 { name: 'ecstatic', range: '*', hasData: true }
+24 silly addNameRange versions [ 'ecstatic',
+24 silly addNameRange   [ '0.0.0',
+24 silly addNameRange     '0.0.1',
+24 silly addNameRange     '0.1.0',
+24 silly addNameRange     '0.1.1',
+24 silly addNameRange     '0.1.1-1',
+24 silly addNameRange     '0.1.2',
+24 silly addNameRange     '0.1.2-1',
+24 silly addNameRange     '0.1.4',
+24 silly addNameRange     '0.1.5',
+24 silly addNameRange     '0.1.6',
+24 silly addNameRange     '0.1.7',
+24 silly addNameRange     '0.3.0',
+24 silly addNameRange     '0.3.1',
+24 silly addNameRange     '0.3.2',
+24 silly addNameRange     '0.4.0',
+24 silly addNameRange     '0.4.1',
+24 silly addNameRange     '0.4.2',
+24 silly addNameRange     '0.4.3',
+24 silly addNameRange     '0.4.4',
+24 silly addNameRange     '0.4.5',
+24 silly addNameRange     '0.4.6',
+24 silly addNameRange     '0.4.7',
+24 silly addNameRange     '0.4.8',
+24 silly addNameRange     '0.4.9',
+24 silly addNameRange     '0.4.10',
+24 silly addNameRange     '0.4.11',
+24 silly addNameRange     '0.4.12',
+24 silly addNameRange     '0.4.13' ] ]
+25 verbose addNamed [ 'ecstatic', '0.4.13' ]
+26 verbose addNamed [ '0.4.13', '0.4.13' ]
+27 silly lockFile db28ca96-ecstatic-0-4-13 ecstatic@0.4.13
+28 verbose lock ecstatic@0.4.13 /Users/hminaya/.npm/db28ca96-ecstatic-0-4-13.lock
+29 silly lockFile 89d5cb23-org-ecstatic-ecstatic-0-4-13-tgz https://registry.npmjs.org/ecstatic/-/ecstatic-0.4.13.tgz
+30 verbose lock https://registry.npmjs.org/ecstatic/-/ecstatic-0.4.13.tgz /Users/hminaya/.npm/89d5cb23-org-ecstatic-ecstatic-0-4-13-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/ecstatic/-/ecstatic-0.4.13.tgz',
+31 verbose addRemoteTarball   '9cb6eaffe211b9c84efb3f553cde2c3002717b29' ]
+32 info retry fetch attempt 1 at 18:04:27
+33 verbose fetch to= /var/folders/24/qldrf5q17j37p33hwy1lgrf80000gn/T/npm-2301-HBQDkt7N/1391897067262-0.40258065704256296/tmp.tgz
+34 http GET https://registry.npmjs.org/ecstatic/-/ecstatic-0.4.13.tgz
+35 http 200 https://registry.npmjs.org/ecstatic/-/ecstatic-0.4.13.tgz
+36 verbose tar unpack /var/folders/24/qldrf5q17j37p33hwy1lgrf80000gn/T/npm-2301-HBQDkt7N/1391897067262-0.40258065704256296/tmp.tgz
+37 silly lockFile 0fe84c1c-7262-0-40258065704256296-package tar:///var/folders/24/qldrf5q17j37p33hwy1lgrf80000gn/T/npm-2301-HBQDkt7N/1391897067262-0.40258065704256296/package
+38 verbose lock tar:///var/folders/24/qldrf5q17j37p33hwy1lgrf80000gn/T/npm-2301-HBQDkt7N/1391897067262-0.40258065704256296/package /Users/hminaya/.npm/0fe84c1c-7262-0-40258065704256296-package.lock
+39 silly lockFile c288834c-7262-0-40258065704256296-tmp-tgz tar:///var/folders/24/qldrf5q17j37p33hwy1lgrf80000gn/T/npm-2301-HBQDkt7N/1391897067262-0.40258065704256296/tmp.tgz
+40 verbose lock tar:///var/folders/24/qldrf5q17j37p33hwy1lgrf80000gn/T/npm-2301-HBQDkt7N/1391897067262-0.40258065704256296/tmp.tgz /Users/hminaya/.npm/c288834c-7262-0-40258065704256296-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry package.json
+43 silly gunzTarPerm extractEntry .npmignore
+44 silly gunzTarPerm extractEntry README.md
+45 silly gunzTarPerm extractEntry .travis.yml
+46 silly gunzTarPerm extractEntry LICENSE.txt
+47 silly gunzTarPerm extractEntry example/core.js
+48 silly gunzTarPerm extractEntry example/express.js
+49 silly gunzTarPerm extractEntry example/union.js
+50 silly gunzTarPerm extractEntry example/public/beep/index.html
+51 silly gunzTarPerm extractEntry example/public/hello.txt
+52 silly gunzTarPerm extractEntry example/public/subdir/world.txt
+53 silly gunzTarPerm extractEntry example/public/turtle.png
+54 silly gunzTarPerm extractEntry lib/ecstatic.js
+55 silly gunzTarPerm extractEntry lib/ecstatic/etag.js
+56 silly gunzTarPerm extractEntry lib/ecstatic/opts.js
+57 silly gunzTarPerm extractEntry lib/ecstatic/showdir.js
+58 silly gunzTarPerm extractEntry lib/ecstatic/status-handlers.js
+59 silly gunzTarPerm extractEntry test/304.js
+60 silly gunzTarPerm extractEntry test/common-cases.js
+61 silly gunzTarPerm extractEntry test/core-error.js
+62 silly gunzTarPerm extractEntry test/core.js
+63 silly gunzTarPerm extractEntry test/express-error.js
+64 silly gunzTarPerm extractEntry test/common-cases-error.js
+65 silly gunzTarPerm extractEntry test/malformed-dir.js
+66 silly gunzTarPerm extractEntry test/malformed.js
+67 silly gunzTarPerm extractEntry test/union-error.js
+68 silly gunzTarPerm extractEntry test/union.js
+69 silly gunzTarPerm extractEntry test/express.js
+70 silly gunzTarPerm extractEntry test/public/c.js
+71 silly gunzTarPerm extractEntry test/public/404.html
+72 silly gunzTarPerm extractEntry test/public/a.txt
+73 silly gunzTarPerm extractEntry test/public/b.txt
+74 silly gunzTarPerm extractEntry test/public/compress/foo.js
+75 silly gunzTarPerm extractEntry test/public/compress/foo_2.js
+76 silly gunzTarPerm extractEntry test/public/subdir/e.html
+77 silly gunzTarPerm extractEntry test/public/subdir/index.html
+78 silly gunzTarPerm extractEntry test/public/subdir_with space/file_with space.html
+79 silly gunzTarPerm extractEntry test/public/subdir_with space/index.html
+80 silly gunzTarPerm extractEntry test/public/中文/檔案.html
+81 silly lockFile 0fe84c1c-7262-0-40258065704256296-package tar:///var/folders/24/qldrf5q17j37p33hwy1lgrf80000gn/T/npm-2301-HBQDkt7N/1391897067262-0.40258065704256296/package
+82 silly lockFile 0fe84c1c-7262-0-40258065704256296-package tar:///var/folders/24/qldrf5q17j37p33hwy1lgrf80000gn/T/npm-2301-HBQDkt7N/1391897067262-0.40258065704256296/package
+83 silly lockFile c288834c-7262-0-40258065704256296-tmp-tgz tar:///var/folders/24/qldrf5q17j37p33hwy1lgrf80000gn/T/npm-2301-HBQDkt7N/1391897067262-0.40258065704256296/tmp.tgz
+84 silly lockFile c288834c-7262-0-40258065704256296-tmp-tgz tar:///var/folders/24/qldrf5q17j37p33hwy1lgrf80000gn/T/npm-2301-HBQDkt7N/1391897067262-0.40258065704256296/tmp.tgz
+85 verbose tar pack [ '/Users/hminaya/.npm/ecstatic/0.4.13/package.tgz',
+85 verbose tar pack   '/var/folders/24/qldrf5q17j37p33hwy1lgrf80000gn/T/npm-2301-HBQDkt7N/1391897067262-0.40258065704256296/package' ]
+86 verbose tarball /Users/hminaya/.npm/ecstatic/0.4.13/package.tgz
+87 verbose folder /var/folders/24/qldrf5q17j37p33hwy1lgrf80000gn/T/npm-2301-HBQDkt7N/1391897067262-0.40258065704256296/package
+88 silly lockFile 0fe84c1c-7262-0-40258065704256296-package tar:///var/folders/24/qldrf5q17j37p33hwy1lgrf80000gn/T/npm-2301-HBQDkt7N/1391897067262-0.40258065704256296/package
+89 verbose lock tar:///var/folders/24/qldrf5q17j37p33hwy1lgrf80000gn/T/npm-2301-HBQDkt7N/1391897067262-0.40258065704256296/package /Users/hminaya/.npm/0fe84c1c-7262-0-40258065704256296-package.lock
+90 silly lockFile 19c89c08--npm-ecstatic-0-4-13-package-tgz tar:///Users/hminaya/.npm/ecstatic/0.4.13/package.tgz
+91 verbose lock tar:///Users/hminaya/.npm/ecstatic/0.4.13/package.tgz /Users/hminaya/.npm/19c89c08--npm-ecstatic-0-4-13-package-tgz.lock
+92 silly lockFile 0fe84c1c-7262-0-40258065704256296-package tar:///var/folders/24/qldrf5q17j37p33hwy1lgrf80000gn/T/npm-2301-HBQDkt7N/1391897067262-0.40258065704256296/package
+93 silly lockFile 0fe84c1c-7262-0-40258065704256296-package tar:///var/folders/24/qldrf5q17j37p33hwy1lgrf80000gn/T/npm-2301-HBQDkt7N/1391897067262-0.40258065704256296/package
+94 silly lockFile 19c89c08--npm-ecstatic-0-4-13-package-tgz tar:///Users/hminaya/.npm/ecstatic/0.4.13/package.tgz
+95 silly lockFile 19c89c08--npm-ecstatic-0-4-13-package-tgz tar:///Users/hminaya/.npm/ecstatic/0.4.13/package.tgz
+96 silly lockFile 0be235d5-naya-npm-ecstatic-0-4-13-package /Users/hminaya/.npm/ecstatic/0.4.13/package
+97 verbose lock /Users/hminaya/.npm/ecstatic/0.4.13/package /Users/hminaya/.npm/0be235d5-naya-npm-ecstatic-0-4-13-package.lock
+98 silly lockFile 0be235d5-naya-npm-ecstatic-0-4-13-package /Users/hminaya/.npm/ecstatic/0.4.13/package
+99 silly lockFile 0be235d5-naya-npm-ecstatic-0-4-13-package /Users/hminaya/.npm/ecstatic/0.4.13/package
+100 verbose tar unpack /Users/hminaya/.npm/ecstatic/0.4.13/package.tgz
+101 silly lockFile 9fa1c988-naya-npm-ecstatic-0-4-13-package tar:///Users/hminaya/.npm/ecstatic/0.4.13/package
+102 verbose lock tar:///Users/hminaya/.npm/ecstatic/0.4.13/package /Users/hminaya/.npm/9fa1c988-naya-npm-ecstatic-0-4-13-package.lock
+103 silly lockFile 19c89c08--npm-ecstatic-0-4-13-package-tgz tar:///Users/hminaya/.npm/ecstatic/0.4.13/package.tgz
+104 verbose lock tar:///Users/hminaya/.npm/ecstatic/0.4.13/package.tgz /Users/hminaya/.npm/19c89c08--npm-ecstatic-0-4-13-package-tgz.lock
+105 silly gunzTarPerm modes [ '755', '644' ]
+106 silly gunzTarPerm extractEntry package.json
+107 silly gunzTarPerm extractEntry .npmignore
+108 silly gunzTarPerm extractEntry README.md
+109 silly gunzTarPerm extractEntry .travis.yml
+110 silly gunzTarPerm extractEntry LICENSE.txt
+111 silly gunzTarPerm extractEntry example/core.js
+112 silly gunzTarPerm extractEntry example/express.js
+113 silly gunzTarPerm extractEntry example/union.js
+114 silly gunzTarPerm extractEntry example/public/beep/index.html
+115 silly gunzTarPerm extractEntry example/public/hello.txt
+116 silly gunzTarPerm extractEntry example/public/subdir/world.txt
+117 silly gunzTarPerm extractEntry example/public/turtle.png
+118 silly gunzTarPerm extractEntry lib/ecstatic.js
+119 silly gunzTarPerm extractEntry lib/ecstatic/etag.js
+120 silly gunzTarPerm extractEntry lib/ecstatic/opts.js
+121 silly gunzTarPerm extractEntry lib/ecstatic/showdir.js
+122 silly gunzTarPerm extractEntry lib/ecstatic/status-handlers.js
+123 silly gunzTarPerm extractEntry test/304.js
+124 silly gunzTarPerm extractEntry test/common-cases.js
+125 silly gunzTarPerm extractEntry test/core-error.js
+126 silly gunzTarPerm extractEntry test/core.js
+127 silly gunzTarPerm extractEntry test/express-error.js
+128 silly gunzTarPerm extractEntry test/common-cases-error.js
+129 silly gunzTarPerm extractEntry test/malformed-dir.js
+130 silly gunzTarPerm extractEntry test/malformed.js
+131 silly gunzTarPerm extractEntry test/union-error.js
+132 silly gunzTarPerm extractEntry test/union.js
+133 silly gunzTarPerm extractEntry test/express.js
+134 silly gunzTarPerm extractEntry test/public/c.js
+135 silly gunzTarPerm extractEntry test/public/404.html
+136 silly gunzTarPerm extractEntry test/public/a.txt
+137 silly gunzTarPerm extractEntry test/public/b.txt
+138 silly gunzTarPerm extractEntry test/public/compress/foo.js
+139 silly gunzTarPerm extractEntry test/public/compress/foo_2.js
+140 silly gunzTarPerm extractEntry test/public/subdir/e.html
+141 silly gunzTarPerm extractEntry test/public/subdir/index.html
+142 silly gunzTarPerm extractEntry test/public/subdir_with space/file_with space.html
+143 silly gunzTarPerm extractEntry test/public/subdir_with space/index.html
+144 silly gunzTarPerm extractEntry test/public/中文/檔案.html
+145 silly lockFile 9fa1c988-naya-npm-ecstatic-0-4-13-package tar:///Users/hminaya/.npm/ecstatic/0.4.13/package
+146 silly lockFile 9fa1c988-naya-npm-ecstatic-0-4-13-package tar:///Users/hminaya/.npm/ecstatic/0.4.13/package
+147 silly lockFile 19c89c08--npm-ecstatic-0-4-13-package-tgz tar:///Users/hminaya/.npm/ecstatic/0.4.13/package.tgz
+148 silly lockFile 19c89c08--npm-ecstatic-0-4-13-package-tgz tar:///Users/hminaya/.npm/ecstatic/0.4.13/package.tgz
+149 verbose chmod /Users/hminaya/.npm/ecstatic/0.4.13/package.tgz 644
+150 verbose chown /Users/hminaya/.npm/ecstatic/0.4.13/package.tgz [ 501, 20 ]
+151 silly lockFile 89d5cb23-org-ecstatic-ecstatic-0-4-13-tgz https://registry.npmjs.org/ecstatic/-/ecstatic-0.4.13.tgz
+152 silly lockFile 89d5cb23-org-ecstatic-ecstatic-0-4-13-tgz https://registry.npmjs.org/ecstatic/-/ecstatic-0.4.13.tgz
+153 silly lockFile db28ca96-ecstatic-0-4-13 ecstatic@0.4.13
+154 silly lockFile db28ca96-ecstatic-0-4-13 ecstatic@0.4.13
+155 silly lockFile da21c704-ecstatic ecstatic@
+156 silly lockFile da21c704-ecstatic ecstatic@
+157 silly resolved [ { author:
+157 silly resolved      { name: 'Joshua Holbrook',
+157 silly resolved        email: 'josh@nodejitsu.com',
+157 silly resolved        url: 'http://jesusabdullah.net' },
+157 silly resolved     name: 'ecstatic',
+157 silly resolved     description: 'A simple static file server middleware that works with both Express and Flatiron',
+157 silly resolved     version: '0.4.13',
+157 silly resolved     homepage: 'https://github.com/jesusabdullah/node-ecstatic',
+157 silly resolved     repository:
+157 silly resolved      { type: 'git',
+157 silly resolved        url: 'git@github.com:jesusabdullah/node-ecstatic.git' },
+157 silly resolved     main: './lib/ecstatic.js',
+157 silly resolved     scripts: { test: 'tap test/*.js' },
+157 silly resolved     bin: { ecstatic: './lib/ecstatic.js' },
+157 silly resolved     keywords: [ 'static', 'web', 'server', 'files', 'mime', 'middleware' ],
+157 silly resolved     dependencies: { mime: '1.2.x', ent: '0.0.x', optimist: '~0.3.5' },
+157 silly resolved     devDependencies:
+157 silly resolved      { tap: '0.3.x',
+157 silly resolved        request: '2.12.x',
+157 silly resolved        express: '3.0.x',
+157 silly resolved        union: '0.3.x',
+157 silly resolved        mkdirp: '0.3.x' },
+157 silly resolved     readme: '# Ecstatic [![build status](https://secure.travis-ci.org/jesusabdullah/node-ecstatic.png)](http://travis-ci.org/jesusabdullah/node-ecstatic)\n\n![](http://imgur.com/vhub5.png)\n\nA simple static file server middleware. Use it with a raw http server,\nexpress/connect, or flatiron/union!\n\n# Examples:\n\n## express 3.0.x\n\n``` js\nvar http = require(\'http\');\nvar express = require(\'express\');\nvar ecstatic = require(\'ecstatic\');\n\nvar app = express();\napp.use(ecstatic({ root: __dirname + \'/public\' }));\nhttp.createServer(app).listen(8080);\n\nconsole.log(\'Listening on :8080\');\n```\n\n## union\n\n``` js\nvar union = require(\'union\');\nvar ecstatic = require(\'ecstatic\');\n\nunion.createServer({\n  before: [\n    ecstatic({ root: __dirname + \'/public\' }),\n  ]\n}).listen(8080);\n\nconsole.log(\'Listening on :8080\');\n```\n\n## stock http server\n\n``` js\nvar http = require(\'http\');\nvar ecstatic = require(\'ecstatic\');\n\nhttp.createServer(\n  ecstatic({ root: __dirname + \'/public\' })\n).listen(8080);\n\nconsole.log(\'Listening on :8080\');\n```\n### fall through\nTo allow fall through to your custom routes:\n\n```js\necstatic({ root: __dirname + \'/public\', handleError: false })\n```\n\n# API:\n\n## ecstatic(opts);\n\nPass ecstatic an options hash, and it will return your middleware!\n\n```js\nvar opts = {\n             root          : __dirname + \'/public\',\n             baseDir       : \'/\',\n             cache         : 3600,\n             showDir       : false,\n             autoIndex     : false,\n             humanReadable : true,\n             si            : false,\n             defaultExt    : \'html\',\n             gzip          : false\n           }\n```\n\nIf `opts` is a string, the string is assigned to the root folder and all other\noptions are set to their defaults.\n\n### `opts.root` \n\n`opts.root` is the directory you want to serve up.\n\n### `opts.baseDir`\n\n`opts.baseDir` is `/` by default, but can be changed to allow your static files\nto be served off a specific route. For example, if `opts.baseDir === "blog"`\nand `opts.root = "./public"`, requests for `localhost:8080/blog/index.html` will\nresolve to `./public/index.html`.\n\n### `opts.cache`\n\nCustomize cache control with `opts.cache` , if it is a number then it will set max-age in seconds.\nOther wise it will pass through directly to cache-control. Time defaults to 3600 s (ie, 1 hour).\n\n### `opts.showDir`\n\nTurn **on** directory listings with `opts.showDir === true`. Defaults to **false**.\n\n### `opts.autoIndex`\n\nServe `/path/index.html` when `/path/` is requested.\nTurn **off** autoIndexing with `opts.autoIndex === false`. Defaults to **true**.\n\n### `opts.humanReadable`\n\nIf autoIndexing is enabled, add human-readable file sizes. Defaults to **true**.\nAliases are `humanreadable` and `human-readable`.\n\n### `opts.si`\n\nIf autoIndexing and humanReadable are enabled, print file sizes with base 1000 instead\nof base 1024. Name is inferred from cli options for `ls`. Aliased to `index`, the\nequivalent option in Apache.\n\n### `opts.defaultExt`\n\nTurn on default file extensions with `opts.defaultExt`. If `opts.defaultExt` is\ntrue, it will default to `html`. For example if you want a request to `/a-file`\nto resolve to `./public/a-file.html`, set this to `true`. If you want\n`/a-file` to resolve to `./public/a-file.json` instead, set `opts.defaultExt` to\n`json`.\n\n### `opts.gzip`\n\nSet `opts.gzip === true` in order to turn on "gzip mode," wherein ecstatic will\nserve `./public/some-file.js.gz` in place of `./public/some-file.js` when the\ngzipped version exists and ecstatic determines that the behavior is appropriate.\n\n### `opts.handleError`\n\nTurn **off** handleErrors to allow fall-through with `opts.handleError === false`, Defaults to **true**.\n\n## middleware(req, res, next);\n\nThis works more or less as you\'d expect.\n\n### ecstatic.showDir(folder);\n\nThis returns another middleware which will attempt to show a directory view. Turning on auto-indexing is roughly equivalent to adding this middleware after an ecstatic middleware with autoindexing disabled.\n\n### `ecstatic` command\n\nto start a standalone static http server,\nrun `npm install -g ecstatic` and then run `ecstatic [dir?] [options] --port PORT`\nall options work as above, passed in [optimist](https://github.com/substack/node-optimist) style.\n`port` defaults to `8000`. If a `dir` or `--root dir` argument is not passed, ecsatic will\nserve the current dir.\n\n# Tests:\n\n    npm test\n\n# License:\n\nMIT.\n',
+157 silly resolved     readmeFilename: 'README.md',
+157 silly resolved     bugs: { url: 'https://github.com/jesusabdullah/node-ecstatic/issues' },
+157 silly resolved     _id: 'ecstatic@0.4.13',
+157 silly resolved     dist: { shasum: '5ff2473cc4a77b9ee434fc78bde2972da409f304' },
+157 silly resolved     _from: 'ecstatic@',
+157 silly resolved     _resolved: 'https://registry.npmjs.org/ecstatic/-/ecstatic-0.4.13.tgz' } ]
+158 info install ecstatic@0.4.13 into /usr/local/lib
+159 info installOne ecstatic@0.4.13
+160 info /usr/local/lib/node_modules/ecstatic unbuild
+161 verbose tar unpack /Users/hminaya/.npm/ecstatic/0.4.13/package.tgz
+162 silly lockFile 26e15d41--local-lib-node-modules-ecstatic tar:///usr/local/lib/node_modules/ecstatic
+163 verbose lock tar:///usr/local/lib/node_modules/ecstatic /Users/hminaya/.npm/26e15d41--local-lib-node-modules-ecstatic.lock
+164 silly lockFile 19c89c08--npm-ecstatic-0-4-13-package-tgz tar:///Users/hminaya/.npm/ecstatic/0.4.13/package.tgz
+165 verbose lock tar:///Users/hminaya/.npm/ecstatic/0.4.13/package.tgz /Users/hminaya/.npm/19c89c08--npm-ecstatic-0-4-13-package-tgz.lock
+166 silly gunzTarPerm modes [ '755', '644' ]
+167 error Error: EACCES, mkdir '/usr/local/lib/node_modules/ecstatic'
+167 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/ecstatic']
+167 error   errno: 3,
+167 error   code: 'EACCES',
+167 error   path: '/usr/local/lib/node_modules/ecstatic',
+167 error   fstream_type: 'Directory',
+167 error   fstream_path: '/usr/local/lib/node_modules/ecstatic',
+167 error   fstream_class: 'DirWriter',
+167 error   fstream_stack:
+167 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+167 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53',
+167 error      'Object.oncomplete (fs.js:107:15)' ] }
+168 error Please try running this command again as root/Administrator.
+169 error System Darwin 13.0.0
+170 error command "node" "/usr/local/bin/npm" "install" "ecstatic" "-g"
+171 error cwd /Users/hminaya/Code/micro-carros
+172 error node -v v0.10.25
+173 error npm -v 1.3.24
+174 error path /usr/local/lib/node_modules/ecstatic
+175 error fstream_path /usr/local/lib/node_modules/ecstatic
+176 error fstream_type Directory
+177 error fstream_class DirWriter
+178 error code EACCES
+179 error errno 3
+180 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/ecstatic'
+181 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+181 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53
+181 error fstream_stack Object.oncomplete (fs.js:107:15)
+182 verbose exit [ 3, true ]
