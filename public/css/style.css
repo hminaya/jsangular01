@@ -1,8 +1,210 @@
+/*
+                                                     ___      
+                                                    /\_ \     
+   __        __     ___       __    _ __     __     \//\ \    
+ /'_ `\    /'__`\ /' _ `\   /'__`\ /\`'__\ /'__`\     \ \ \   
+/\ \L\ \  /\  __/ /\ \/\ \ /\  __/ \ \ \/ /\ \L\.\_    \_\ \_ 
+\ \____ \ \ \____\\ \_\ \_\\ \____\ \ \_\ \ \__/.\_\   /\____\
+ \/___L\ \ \/____/ \/_/\/_/ \/____/  \/_/  \/__/\/_/   \/____/
+   /\____/                                                    
+   \_/__/                                                     */
+
 body {
+	color: #EEE;
 	background: #1C1C1C;
 }
 
+.no-padding {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.banner {
+	text-align: center;
+	text-shadow: 2px 2px #000;
+	background: url('../img/dark-stripes.png');
+}
+
+.banner-280x240 {
+	height: 240px;
+}
+
+#wrapper {
+	width: 975px;
+}
+
+#main-header {
+	margin-bottom: 15px;
+	border-bottom: 1px solid #111;
+	box-shadow: 0px 1px #333;
+}
+
 #main-header h1 {
-	color: #EEE;
 	font-size: 42px;
+}
+
+#content {
+	padding-left: 0;
+}
+
+#main-column {
+	padding-right: 0;
+}
+
+#main-footer {
+	margin-top: 15px;
+	padding: 1.5em 0;
+	color: #666;
+	border-top: 1px solid #333;
+	box-shadow: 0px -1px #111;
+}
+
+/*                                          __         
+                                         /\ \        
+  ____     __      __      _ __    ___   \ \ \___    
+ /',__\  /'__`\  /'__`\   /\`'__\ /'___\  \ \  _ `\  
+/\__, `\/\  __/ /\ \L\.\_ \ \ \/ /\ \__/   \ \ \ \ \ 
+\/\____/\ \____\\ \__/.\_\ \ \_\ \ \____\   \ \_\ \_\
+ \/___/  \/____/ \/__/\/_/  \/_/  \/____/    \/_/\/_/
+                                                     
+                                                     */
+#vehicle-search .input {
+	margin-bottom: 2em;
+}
+
+#vehicle-search .input label {
+	width: 100%;
+}
+
+/*
+                  __                     
+ __              /\ \                    
+/\_\     ___     \_\ \      __    __  _  
+\/\ \  /' _ `\   /'_` \   /'__`\ /\ \/'\ 
+ \ \ \ /\ \/\ \ /\ \L\ \ /\  __/ \/>  </ 
+  \ \_\\ \_\ \_\\ \___,_\\ \____\ /\_/\_\
+   \/_/ \/_/\/_/ \/__,_ / \/____/ \//\/_/
+                                         
+                                         
+                                         */
+
+
+
+/*
+   ___                     __                                __     
+ /'___\                   /\ \__                            /\ \    
+/\ \__/    __      __     \ \ ,_\   __  __   _ __     __    \_\ \   
+\ \ ,__\ /'__`\  /'__`\    \ \ \/  /\ \/\ \ /\`'__\ /'__`\  /'_` \  
+ \ \ \_//\  __/ /\ \L\.\_   \ \ \_ \ \ \_\ \\ \ \/ /\  __/ /\ \L\ \ 
+  \ \_\ \ \____\\ \__/.\_\   \ \__\ \ \____/ \ \_\ \ \____\\ \___,_\
+   \/_/  \/____/ \/__/\/_/    \/__/  \/___/   \/_/  \/____/ \/__,_ /
+                                                                    
+                                                                    */
+
+#content.index .featured .slider {
+	position: relative;
+	width: 436px;
+	height: 243px;
+}
+
+#content.index .featured .slider article {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 436px;
+	height: 243px;
+}
+
+#content.index .featured .slider article img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#content.index .featured .slider article h2,
+#content.index .featured .slider article h3 {
+	position: absolute;
+	left: 20px;
+	text-shadow: 2px 2px #333;
+}
+
+#content.index .featured .slider article h2 {
+	bottom: 30px;
+}
+
+#content.index .featured .slider article h3 {
+	bottom: 0px;
+}
+
+#content.index .featured nav {
+	margin-top: 10px;
+}
+
+#content.index .featured nav a span {
+	display: none;
+}
+
+
+/* __                                    __             
+/\ \                                  /\ \            
+\ \ \____   _ __     __       ___     \_\ \     ____  
+ \ \ '__`\ /\`'__\ /'__`\   /' _ `\   /'_` \   /',__\ 
+  \ \ \L\ \\ \ \/ /\ \L\.\_ /\ \/\ \ /\ \L\ \ /\__, `\
+   \ \_,__/ \ \_\ \ \__/.\_\\ \_\ \_\\ \___,_\\/\____/
+    \/___/   \/_/  \/__/\/_/ \/_/\/_/ \/__,_ / \/___/ 
+                                                      
+                                                      */
+
+#content.index #brands-scroller ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 76px;
+}
+
+#content.index #brands-scroller ul li a {
+	display: block;
+	background: none;
+	transition: 1s;
+}
+
+#content.index #brands-scroller ul li a:hover {
+	background: #354873;
+	transition: 1s;
+}
+
+#content.index #brands-scroller ul li a span {
+	display: none;
+}
+
+
+/* ___                 __                       __      
+/\_ \               /\ \__                   /\ \__   
+\//\ \       __     \ \ ,_\     __     ____  \ \ ,_\  
+  \ \ \    /'__`\    \ \ \/   /'__`\  /',__\  \ \ \/  
+   \_\ \_ /\ \L\.\_   \ \ \_ /\  __/ /\__, `\  \ \ \_ 
+   /\____\\ \__/.\_\   \ \__\\ \____\\/\____/   \ \__\
+   \/____/ \/__/\/_/    \/__/ \/____/ \/___/     \/__/
+                                                      
+                                                      */
+
+#content.index #latest-vehicles article {
+	margin-bottom: 1em;
+	height: 160px;
+	overflow: hidden;
+}
+
+#content.index #latest-vehicles article a {
+	color: #EEE;
+}
+
+#content.index #latest-vehicles article img {
+	margin-bottom: 5px;
+}
+
+#content.index #latest-vehicles article h4,
+#content.index #latest-vehicles article h5 {
+	font-style: helvetica, arial, 'sans-serif';
+	font-size: 12px;
+	margin: 0;
 }
