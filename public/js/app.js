@@ -1,4 +1,4 @@
-angular.module("microcarros",[])
+angular.module("microcarros",["ngRoute"])
 .controller("principal",function main($scope,carros){
 
 	// Yo traigo datos
@@ -18,4 +18,12 @@ angular.module("microcarros",[])
 		$scope.carros.splice(index,1);
 	}
 */
+})
+.config(function($routeProvider){
+
+	$routeProvider
+		.when('/', {templateUrl: '/views/index.html', controller: "index" })
+		.when('/details/:id', {templateUrl: '/views/details.html', controller: "details" })
+		.otherwise({redirectTo: '/'});
+
 })
